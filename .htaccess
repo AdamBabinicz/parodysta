@@ -14,7 +14,7 @@ RewriteCond %{HTTP_HOST} ^www.parodysta.000webhostapp.com$ [NC]
 RewriteRule ^(.*)$ https://parodysta.000webhostapp.com/$1 [R=301,L]
 
 RewriteRule parodysta-radomski-michal index.html
-RewriteRule moje-ulubione-filmy-komediowe-i-cytaty filmy-seriale.html
+#RewriteRule moje-ulubione-filmy-komediowe-i-cytaty filmy-seriale.html
 RewriteRule fotki-michala-parodysty-zwanego-maklowiczem-z-radomia galeria.html
 RewriteRule rysunki-olowkiem-piosenkarzy-i-aktorow szkice.html
 
