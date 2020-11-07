@@ -1,0 +1,55 @@
+/*wysokość kontenera*/
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+}
+
+
+
+/*media queries*/
+$breakpoints: (
+    "phone":        400px,
+    "phablet":      560px,
+    "tablet":       768px,
+    "tablet-wide":  1024px,
+    "desktop":      1248px,
+    "desktop-wide": 1440px
+);
+@mixin mq($width, $type: min) {
+    @if map_has_key($breakpoints, $width) {
+        $width: map_get($breakpoints, $width);
+        @if $type == max {
+            $width: $width - 1px;
+        }
+        @media only screen and (#{$type}-width: $width) {
+            @content;
+        }
+    }
+}
+
+
+@mixin gradient($startColor, $endColor) {
+	background: $startColor;
+	/*Old browser*/
+	background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $startColor 0%, $endColor 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor', GradientType=0);
+	/* IE6-9 */
+}
+
+@mixin transition($prop: all, $speed: 0.2s, $easing: linear) {
+       -webkit-transition: $prop $speed $easing;
+       -moz-transition: $prop $speed $easing;
+       -o-transition: $prop $speed $easing;
+       -ms-transition: $prop $speed $easing;
+       transition: $prop $speed $easing;
+}
+

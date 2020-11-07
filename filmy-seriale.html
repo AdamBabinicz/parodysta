@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="DESCRIPTION"
+      content="Najśmieszniejsze cytaty z polskich filmów komediowych i seriali, wybrane i zapamiętane przez parodystę Michała zwanego 'Makłowiczem z Radomia'."
+    />
+
+    <meta property="og:title" content="Wita Was Michał parodysta" />
+    <meta property="og:description" content="1,5 mln wyświetleń na YouTube" />
+    <meta
+      property="og:image"
+      content="https://parodysta.000webhostapp.com/images/4.png"
+    />
+    <title>Michał - radomski parodysta - filmy i seriale</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://parodysta.000webhostapp.com/favicon.ico"
+    />
+  </head>
+
+  <body>
+    <header>
+      <figure class="logo">
+        <img
+          src="images/bird.png"
+          srcset="
+            images/bird1x.png 1x,
+            images/bird2x.png 2x,
+            images/bird3x.png 3x
+          "
+          alt="logo-papuga"
+        />
+      </figure>
+      <h1>tu Michał,</h1>
+      <h2>Wasz radomski parodysta</h2>
+      <ul class="social">
+        <li class="in">
+          <a href="https://pl.linkedin.com" target="_blank"
+            ><span>Linkedin</span></a
+          >
+        </li>
+        <li class="google">
+          <a href="https://pl.pinterest.com/" target="_blank"
+            ><span>Pinterest</span></a
+          >
+        </li>
+        <li class="twitter">
+          <a href="https://twitter.com/Micha92789947" target="_blank"
+            ><span>Twitter</span></a
+          >
+        </li>
+        <li class="youtube">
+          <a
+            href="https://www.youtube.com/channel/UCaljb6wRVUbFQiILO4xyjRw"
+            target="_blank"
+            ><span>You Tube</span></a
+          >
+        </li>
+      </ul>
+      <nav>
+        <ul>
+          <li>
+            <a href="parodysta-radomski-michal" aria-haspopup="true"
+              >O mnie ▼</a
+            >
+            <ul>
+              <li>
+                <a href="rysunki-olowkiem-piosenkarzy-i-aktorow">Szkice</a>
+              </li>
+            </ul>
+          </li>
+          <li class="active"><a href="#">Filmy i seriale</a></li>
+          <li>
+            <a href="fotki-michala-parodysty-zwanego-maklowiczem-z-radomia"
+              >Zdjęcia</a
+            >
+          </li>
+          <li>
+            <a href="http://parodystamichal.blogspot.com" target="_blank"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--MAIN STARTS HERE-->
+    <main>
+      <h2><b>Cytaty</b></h2>
+
+      <!--START NAV FILMS-->
+      <div class="cyt">
+        <div id="informacje"></div>
+        <div id="zdjecie"></div>
+      </div>
+      <br />
+      <div id="miniaturki"></div>
+      <br />
+    </main>
+    <!--FOOTER STARTS HERE-->
+    <footer>
+      <p>Michał 2018 - 2020</p>
+    </footer>
+    <script>
+      var zdjecia = Array(
+        Array(
+          "filmy/vabank1.jpg",
+          "filmy/icon.png",
+          "Vabank",
+          '"Przepraszam, zastałem pana Murzyna?<br>Kogo?<br> No Murzyna, przecież wczoraj widziałem, jak wychodził z tego mieszkania z psem.<br>Co? Z antychrystem pod jednym dachem, broń Boże... i tu nie ma żadnego psa!"'
+        ),
+        Array(
+          "filmy/ck1.jpg",
+          "filmy/icon.png",
+          "C.K. Dezerterzy",
+          '"Niedługo stwierdzą niezbicie, że napadu na tego pijanego oficera dokonała załoga łodzi podwodnej z atlantyckiej eskadry angielskiej, wykreślą trasę tej łodzi na mapie i udowodnią, że łódź ominęła linie blokady, wpłynęła do Dunaju i jakimś dopływem dostała się do nas, potem rurami kanalizacyjnymi podjechała do sracza i zakotwiczyła w oczekiwaniu na pana oberlejtnanta!"'
+        ),
+        Array(
+          "filmy/agata1.jpg",
+          "filmy/icon.png",
+          "Uprowadzenie Agaty",
+          '"Chodzi o to, że ja do policji zgłosiłem się sam z własnej woli, nie po to, żeby wysługiwać się takim fagasom, jak wy - a muszę! Ja od tego wszystkiego zwariowałem. Heniu odkręcaj."<br>"To jest zamach stanu! To jest zamach stanu!"'
+        ),
+        Array(
+          "filmy/king1.jpg",
+          "filmy/icon.png",
+          "Kingsajz",
+          '"Hejkum kejkum, Olo, ratuj! Hejkum kejkum, Olo, ratuj!"<br>"Daj mi agrafkę… żywcem mnie nie wezmą!"<br>"Mydłem. Dobijemy go mydłem."'
+        ),
+        Array(
+          "filmy/nikodem1.jpg",
+          "filmy/icon.png",
+          "Kariera Nikodema Dyzmy",
+          '"Milczeć! Sapristi! Z was się śmieję! Z was! Elita! Cha, cha, cha... Otóż oświadczam wam, że wasz mąż stanu, wasz Cincinnatus, wasz wielki człowiek, wasz Nikodem Dyzma to zwykły oszust, co was za nos wodzi, to sprytny łajdak, fałszerz i jednocześnie kompletny kretyn! Idiota, nie mający zielonego pojęcia nie tylko o ekonomii, lecz o ortografii. To cham, bez cienia kindersztuby, bez najmniejszego okrzesania!".'
+        ),
+        Array(
+          "filmy/rejs1.jpg",
+          "filmy/icon.png",
+          "Rejs",
+          '"I kto za to płaci? Pani płaci, Pan płaci.. Społeczeństwo."<br>"Przejdźmy od słów do czynów. Chciałem powiedzieć kilka słów."<br>"Nam chodzi o odgłos wydany paszczą.<br>Patataj... Patataj... Patataj..."'
+        ),
+        Array(
+          "filmy/mis1.jpg",
+          "filmy/icon.png",
+          "Miś",
+          '"Dzień dobry, cześć i czołem! Pytacie, skąd się wziąłem?! Jestem wesoły Romek! Mam na przedmieściu domek, a w domku wodę, światło, gaz! Powtarzam zatem jeszcze raz: jestem wesoły Romek! Mam…"<br>"Łubu dubu, łubu dubu, niech żyje nam prezes naszego klubu. Niech żyje nam! To śpiewałem ja – Jarząbek."'
+        ),
+        Array(
+          "filmy/kiep1.jpg",
+          "filmy/icon.png",
+          "Świat według Kiepskich",
+          '"Ja se idę do siebie i se usmażę kiszeczki na tłuszczyku, tłuściutko tak jak lubię."<br>"Śpię se spokojnie, a tu nagle sru! Panie lecę do kuchni, a tam mi się lodówa rozdupcyła!"<br>"Pieniądz nie gra roli, kiedy pęcherz boli!"<br>"To panu zawsze się chce, kiedy mnie się chce!"<br>"Babka ty siedź cicho bo cię zamkniem do szafy!"<br>"O, w mordę jeża!"<br>"Moje ulubiene."'
+        )
+      );
+
+      var max_width = document.querySelector("#zdjecie");
+
+      function laduj() {
+        for (var i = 0; i < zdjecia.length; i++)
+          document.getElementById("miniaturki").innerHTML +=
+            '<img src="' + zdjecia[i][1] + '" onclick="zmien(' + i + ')" />';
+
+        zmien(0);
+      }
+
+      function zmien(id) {
+        document.getElementById("zdjecie").innerHTML +=
+          '<div id="ladowanie"></div>';
+        var custom = "";
+        var preload = new Image();
+        preload.onload = function() {
+          if (preload.width > max_width)
+            custom =
+              ' style="height: ' +
+              Math.floor(max_width / (preload.width / preload.height)) +
+              "px;width:" +
+              max_width +
+              'px;"';
+
+          document.getElementById("informacje").innerHTML =
+            "<b>" +
+            zdjecia[id][2] +
+            "</b><br /><br /><i>" +
+            zdjecia[id][3] +
+            "</i>";
+          document.getElementById("zdjecie").innerHTML =
+            '<img src="' + zdjecia[id][0] + '"' + custom + " />";
+        };
+        preload.src = zdjecia[id][0];
+      }
+
+      window.onload = laduj;
+    </script>
+
+    <script>
+      document.body.innerHTML +=
+        '<div id="cookiesAlert" style="border-radius: .5rem .5rem 0 0;display:flex;align-items: center;padding-left:1rem;background:#ccc;opacity:.7;position:fixed;left:11px;bottom:0;z-index:99999999;font-family:sans-serif;text-align:center;font-size:12px;">Ta strona używa plików cookies. <button style="font-size:14px;font-weight:900;border-top-right-radius:.5rem;padding:6px;border:none;background:#aaa;cursor:pointer;" id="acceptBtn" onclick="document.getElementById(\'cookiesAlert\').style.display = \'none\';">OK</button></div>';
+
+      function close() {
+        document.getElementById("cookiesAlert").style.color = "blue";
+      }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-121066419-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-121066419-1");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Michał - \"radomski Makłowicz\"",
+        "url": "https://parodysta.000webhostapp.com",
+        "sameAs": [
+          "https://www.facebook.com",
+          "https://pl.pinterest.com/",
+          "https://twitter.com/Micha92789947"
+        ]
+      }
+    </script>
+    <script
+      async
+      src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"
+    ></script>
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(
+        "header, nav, #informacje, #zdjecie, #miniaturki, main h2, p, footer",
+        {
+          reset: true,
+          delay: 300
+        }
+      );
+    </script>
+  </body>
+</html>

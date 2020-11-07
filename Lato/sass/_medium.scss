@@ -1,0 +1,46 @@
+/*------------NAV-------------*/
+
+/*----------HEADER SOCIAL ICONS------------*/
+
+header {
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+	}
+	ul.social li {
+
+		padding-right: 1.5rem;
+	}
+	ul.social li a {
+		font-size: 2.5rem;
+	} //end ul.social li a
+} //end header
+/*----------NAV------------*/
+
+nav {
+	li:hover > ul {
+		width: 25%;
+	}
+} //end NAV
+/*------------MAIN----------*/
+
+main {
+	div.container1 div {
+		-ms-flex: 46%;
+		flex-basis: 50%;
+	}
+	.cyt {
+
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+        flex-wrap: wrap;
+	}
+	#informacje {
+		flex-grow: 3;
+		text-align: left;
+        
+	}
+
+} //end end

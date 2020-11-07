@@ -1,0 +1,50 @@
+/*------HEADER SOCIAL ICONS----*/
+
+ul.social li {
+
+	padding-right: 2rem;
+} //end ul.social li
+/*------------NAV-------------*/
+
+nav {
+	ul {
+		display: flex;
+		display: -ms-flexbox;
+		justify-content: flex-end;
+	}
+	background-color: $secondaryColor;
+	border-bottom: 1px solid rgba(0, 0, 0, .3);
+	ul li {
+		flex-basis: 15%;
+		-ms-flex: 15%;
+		border-right: 1px solid rgba(0, 0, 0, .3);
+		text-decoration: none;
+		list-style-type: none;
+		border-left: 1px solid rgba(0, 0, 0, .3);
+	} //end li
+	ul li a {
+
+		padding: .5rem 1rem;
+
+	} //end anchors
+	li:hover > ul {
+		width: 15%;
+	}
+
+}
+
+/*-----------MAIN------------*/
+
+main {
+	div.container1 div {
+		-ms-flex: 29.333%;
+		flex-basis: 33.333%;
+	}
+	.cyt {
+
+		display: flex;
+		justify-content: center;
+        flex-wrap: nowrap;
+	}
+
+} //end main

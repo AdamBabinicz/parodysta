@@ -1,0 +1,27 @@
+$primaryColor: #3c5781;
+$secondaryColor: rgb(144, 186, 86);
+$fontColor: #dce2eb;
+$menuColor: rgba(153, 0, 0, 0.57);
+$backgroundColor: rgba(149, 145, 145, 0.33);
+$mainColor: rgba(187, 187, 187, 0.24);
+
+$defaultFont: 'Lato',
+sans-serif;
+$normalWeight: 300;
+$boldWeight: 700;
+
+$gutter: 2%;
+$gutterdbl: (2 * $gutter);
+
+@mixin gradient($startColor, $endColor) {
+	background: $startColor;
+	/*Old browser*/
+	background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, $startColor 0%, $endColor 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$startColor', endColorstr='$endColor', GradientType=0);
+	/* IE6-9 */
+}

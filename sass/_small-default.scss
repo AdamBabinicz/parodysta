@@ -1,0 +1,312 @@
+* {
+  @include mq(phone, max);
+}
+
+html {
+  @include clearfix;
+}
+
+body {
+  position: relative;
+  font-family: "Tahoma", sans-serif;
+  background-color: $backgroundColor;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: darken($color, 50%);
+  figcaption {
+    text-align: center;
+    margin-top: 0.6rem;
+  }
+  p {
+    line-height: 1.7rem;
+    margin: 0 0.7rem;
+  }
+}
+
+/*------------HEADER---------------*/
+
+header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  height: 8em;
+
+  figure.logo {
+    float: left;
+    margin-top: 0.35rem;
+    margin-right: 1.1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: $normalWeight;
+    font-family: "Lato", sans-serif;
+  }
+  h2 {
+    font-size: 1.12rem;
+    font-weight: $normalWeight;
+    font-family: "Lato", sans-serif;
+  } //end h2 rules
+  /*--------HEADER SOCIAL ICONS-----------*/
+  ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  ul.social li a {
+    display: block;
+    margin: 0 auto;
+    background-image: url(../images/media.png);
+    height: 3rem;
+    width: 3.2rem;
+    transition: all 0.5s ease;
+    margin-bottom: 0.4rem;
+    span {
+      display: none;
+    }
+  }
+  ul.social li a:hover {
+    background-image: url(../images/media-.png);
+    transition: background-image 0.5s ease;
+    transform: scale(1.05);
+  }
+  ul.social .in a {
+    background-position: -8px -90px;
+  }
+  ul.social .google a {
+    background-position: -53px -90px;
+  }
+  ul.social .twitter a {
+    background-position: -152px 0.3px;
+  }
+  ul.social .youtube a {
+    background-position: -105px 0.3px;
+  }
+  ul.social .in a:hover {
+    background-position: -8px -90px;
+  }
+  ul.social .google a:hover {
+    background-position: -53px -90px;
+  }
+  ul.social .twitter a:hover {
+    background-position: -152px 0.3px;
+  }
+  ul.social .youtube a:hover {
+    background-position: -105px 0.3px;
+  }
+} //end header
+/*------------------ NAV ----------------*/
+
+nav {
+  @include gradient($secondaryColor, darken($secondaryColor, 20%));
+  @include gradient($secondaryColor, darken($secondaryColor, 20%));
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  z-index: 999;
+
+  ul {
+    display: flex;
+    display: -ms-flexbox;
+  }
+
+  ul li {
+    flex-basis: 25%;
+    -ms-flex: 25%;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    justify-content: center;
+  } //end li
+  ul li:last-child {
+    border-right: none;
+  }
+  ul li a {
+    display: block;
+    text-align: center;
+    font-weight: $boldWeight;
+    padding: 0.5rem 0.3rem;
+    color: $primaryColor;
+    white-space: nowrap;
+    transition: background 0.5s ease;
+  } //end anchors
+  ul li.active a {
+    background-color: darken($secondaryColor, 17%);
+  } //end active
+  ul li a:hover {
+    color: $secondaryColor;
+    background-color: lighten($primaryColor, 10%);
+    transition: background 0.5s ease;
+  } //end hover
+  li > ul {
+    display: none;
+    position: relative;
+  }
+
+  li:hover > ul {
+    display: block;
+    position: absolute;
+    width: 25%;
+    background-color: $secondaryColor;
+    text-align: center;
+    transition: background 0.5s ease;
+  }
+} //end nav
+/*-------------MAIN--------------*/
+
+main {
+  display: block;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 8.7rem;
+  padding-top: 2rem;
+
+  h1 {
+    font-size: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    color: $primaryColor;
+  } //end h1
+  h2 {
+    font-size: 1.5rem;
+    margin: 0.75rem 0 0.5rem 1rem;
+    color: $primaryColor;
+  } //end h2
+  div.zn {
+    text-align: center;
+  }
+  div.container1 {
+    display: -ms-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    h2 {
+      font-size: 1.5rem;
+      margin: 0.75rem 0 0.5rem 0;
+      color: $primaryColor;
+      text-align: center;
+    }
+  }
+  div.container1 figure {
+    -ms-flex: 46%;
+    flex-basis: 50%;
+    padding: 1rem $gutter;
+    transition: transform 0.3s ease-in-out;
+  }
+  div.container1 figure img:hover {
+    transform: scale(1.05);
+    @include transition($easing: ease-out);
+  }
+  div.container1 figure img {
+    width: 100%;
+    @include transition($easing: ease-out);
+  }
+
+  .dol {
+    margin: 2rem auto;
+    max-width: 95%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  div.container1 div {
+    -ms-flexbasis: 100%;
+    flex-basis: 100%;
+    padding: 1rem $gutter;
+    align-items: stretch;
+    background-color: $mainColor;
+  }
+  code {
+    background-color: rgba(248, 248, 248, 0.35);
+    border-color: #dfdfdf;
+    border-style: solid;
+    border-width: 1px;
+    color: lighten($color, 20%);
+    font-family: "Roboto Mono", monospace;
+    font-weight: $boldWeight;
+    font-size: 0.9rem;
+    padding: 0.125rem 0.3125rem 0.0625rem;
+  }
+
+  /*-------------- SLICK SLIDER -------------*/
+  div.myslider div {
+    width: 100%;
+  }
+
+  div.myslider div img {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .cyt {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5rem;
+  }
+
+  #informacje {
+    align-self: stretch;
+    flex-grow: 3;
+    padding: 0.7rem 0.8rem 1rem;
+    text-align: justify;
+    width: 100%;
+    color: rgba(51, 51, 51, 0.88);
+    b {
+      color: gray;
+    }
+  }
+
+  #miniaturki {
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 1rem;
+    flex-wrap: wrap;
+  }
+  #miniaturki img {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    max-width: 100%;
+  }
+  #miniaturki img:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #zdjecie img {
+    max-width: 100%;
+  }
+} //end main
+/*---------------FOOTER-------------*/
+
+footer {
+  width: 100%;
+  background-color: $primaryColor;
+  height: 3.2rem;
+  line-height: 3.2rem;
+
+  p {
+    text-align: center;
+    color: $secondaryColor;
+    padding: 0.75rem 0;
+    font-size: 0.9rem;
+  } //end p
+} //end footer
+@font-face {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://parodysta.000webhostapp.com/Roboto_Mono/RobotoMono-Regular.woff);
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://parodysta.000webhostapp.com/Lato/Lato-Light.woff);
+}
