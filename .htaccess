@@ -10,8 +10,8 @@ satisfy all
 
 RewriteEngine on
 # przekierowanie dla przykładu www -> bez www
-RewriteCond %{HTTP_HOST} ^www.parodysta.000webhostapp.com$ [NC]
-RewriteRule ^(.*)$ https://parodysta.000webhostapp.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www.parodysta.netlify.app$ [NC]
+RewriteRule ^(.*)$ https://parodysta.netlify.app/$1 [R=301,L]
 
 #RewriteRule parodysta-radomski-michal index.html
 #RewriteRule moje-ulubione-filmy-komediowe-i-cytaty filmy-seriale.html
@@ -27,7 +27,7 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/favicon.ico$ [NC]
 RewriteCond %{REQUEST_URI} /favicon(s)?\.?(gif|ico|jpe?g?|png)?$ [NC]
-RewriteRule (.*) https://parodysta.000webhostapp.com/images/favicon.ico [R=301,L]
+RewriteRule (.*) https://parodysta.netlify.app/images/favicon.ico [R=301,L]
 </IfModule>
 
 #Zaznaczenie lokalizacji robots.txt 
@@ -35,7 +35,7 @@ RewriteRule (.*) https://parodysta.000webhostapp.com/images/favicon.ico [R=301,L
 RewriteBase /
 RewriteCond %{REQUEST_URI} !^/robots.txt$ [NC]
 RewriteCond %{REQUEST_URI} robots\.txt [NC]
-RewriteRule .* https://images.000webhostapp.com/robots.txt [R=301,L]
+RewriteRule .* https://parodysta.netlify.app/robots.txt [R=301,L]
 </IfModule>
 
 # dla błędu 404
