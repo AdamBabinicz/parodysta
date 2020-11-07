@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: https://parodysta.000webhostapp.com/sitemap.xml
+Sitemap: https://parodysta.netlify.app/sitemap.xml
