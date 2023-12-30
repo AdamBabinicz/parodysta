@@ -408,7 +408,7 @@ main #zdjecie img {
 /*---------------FOOTER-------------*/
 footer {
   width: 100%;
-  background-color: #3c5781;
+  /* background-color: #3c5781; */
   height: 3.2rem;
   line-height: 3.2rem;
 }
