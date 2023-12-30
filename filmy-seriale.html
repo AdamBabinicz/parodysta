@@ -103,8 +103,15 @@
     </main>
     <!--FOOTER STARTS HERE-->
     <footer>
-      <p>Michał 2018 - 2023</p>
+      <p>Michał <span id="yearRange">2018 -</span></p>
     </footer>
+    <script>
+      var currentDate = new Date();
+      var currentYear = currentDate.getFullYear();
+      var startYear = 2018;
+      var yearRangeElement = document.getElementById("yearRange");
+      yearRangeElement.innerHTML = startYear + " - " + currentYear;
+    </script>
     <script>
       var zdjecia = Array(
         Array(
