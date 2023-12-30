@@ -415,7 +415,8 @@ footer {
 
 footer p {
   text-align: center;
-  color: #90ba56;
+  color: #000;
+  font-weight: bolder;
   padding: 0.75rem 0;
   font-size: 0.9rem;
 }
